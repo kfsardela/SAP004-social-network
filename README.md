@@ -1,5 +1,15 @@
 # SpaceJobs
 
+## Índice
+
+* [1. Definiçao de Produto](#1-definição-de-produto)
+* [2. Usuário](#2-usuário)
+* [3. Funcionalidades](#3-funcionalidades)
+* [4. Prototipação](#4-prototipação)
+* [5. Instalação do projeto](#5-Instalação-do-projeto)
+* [6. Considerações técnicas](#6-considerações-técnicas)
+* [7. Implementações Futuras](#7-Implementações-Futuras)
+* [Autoras](#Autoras)
 
 ## 1. Definição do produto
 SpaceJobs é uma plataforma para profissionais divulgarem os seus trabalhos, podendo ser contatados caso outra pessoa tenha interesse no seu serviço . No SpaceJobs, o usuario tambem poderá encontrar os profissionais que deseja e ver seus trabalhos antes de contratá-los, tendo assim uma maior confiança em seu serviço, podendo tambem compartilhar e indicar os profissionais que conhece para outras pessoas da rede. Pensando na acessibilidade desenvolvemos um site responsivo, no conceito mobile first, o qual é possível ser acessado por vários tipos de dispositivos, como computador, celular, tablet, etc.
@@ -18,7 +28,8 @@ O Projeto foi pensado e desenvolvido para todos os profissionais que desejam div
 * Os usuarios podem dar like ou desfazê-lo, além de comentar um post e editar ou deletar o seu proprio comentário;
 * No perfil o usuário pode editar as informações do seu perfil, tais como foto, nome, profissão, local e se desejar adicionar uma pequena biografia.
 
-## 4.1.  Protótipo fornecido
+## 4.  Prototipação
+
 Para esse projeto, nos foi fornecido um layout pronto, para ser usado como parametro para o desenvolvimento do site.
 
 * Telas mobile 
@@ -29,8 +40,8 @@ Para esse projeto, nos foi fornecido um layout pronto, para ser usado como param
 
   <img src="./public/img/layoutWeb.png" alt="" width="200px">
 
-## 4.2. Protótipo final
-Com base no layout fornecido, criamos um protótipo no Figma de como ficaria nossa pagina e então começarmos a desenvolvê-la. 
+
+Com base no layout fornecido, criamos um protótipo no Figma de como ficaria nossa pagina para então começarmos a desenvolvê-la. 
 
 
 * Telas Mobile
@@ -43,21 +54,69 @@ Com base no layout fornecido, criamos um protótipo no Figma de como ficaria nos
   <img src="./public/img/Desktop - 1.png" alt="" width="200px">
 
 
+## 5. Instalação do projeto
 
-## 5. Considerações técnicas
+Caso deseje baixar o projeto para sua máquina, é possível criar um fork desse repositório, e em segida clonar em sua máquina executando o seguinte comando no seu terminal:
+
+```sh
+git clone (link-do-repositório)
+```
+
+Caso não possua o Node.js instalado, basta clicar nesse link [aqui](https://nodejs.org/pt-br/download/) e fazer o download, pois, para executar ele em seu computador, será necessário realizar a instalação da pasta node modules, com o uso do NPM (nativo do Node.js).
+
+Assim que a instalação tiver sido concluída, basta digitar em seu terminal:
+
+```sh
+npm install
+```
+Se ainda não possui uma conta no Firebase, você deve criar uma e um projeto novo onde ficará seu banco de dados.
+
+Para instalar o Firebase, utilize o comando:
+
+```sh
+npm install -g firebase-tools
+```
+
+Para conectar sua máquina local a sua conta no Firebase é necessário fazer o login, digitando o seguinte comando em seu treminal:
+
+```sh
+firebase login
+```
+
+Inicialize seu projeto utilizando o comando:
+
+  ```sh
+  firebase init
+  ```
+
+Para abrir um servidor a fim de executar o projeto em seu navegador, é só digitar:
+  
+  ```sh
+  firebase serve
+  ```
+
+Para realizar um deploy, utilize o seguinte comando:
+
+```sh
+firebase deploy
+```
+
+
+## 6. Considerações técnicas
 
 Ferramentas utilizadas no projeto:
 
 * HTML, CSS, JavaScript, Node.js, Npm, VS Code, Firebase, Figma, Git e GitHub.
 
 
-## 6. Considerações finais
+## 7. Implementações Futuras
 
-* A funcionalidade cumpre e satisfaz os critérios de aceitação.
-* O layout está de acordo com o protótipo.
-* O código desta funcionalidade recebeu code review.
-* A funcionalidade está publicada para ser testada.
-* A funcionalidade foi testada manualmente.
+- Implementar os testes.
+- Possibilidade de seguir perfis de outros usuários para acompanhar suas publicações públicas.
+- Enviar email com nova senha para o usuário que esqueceu sua senha. 
+-  Refatoração do código.
+-  Novos testes de usabilidade para futuras melhorias.
+
 
 ## Autoras
 
